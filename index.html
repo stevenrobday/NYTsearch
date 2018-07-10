@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY Times Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">New York Times Search</a>
+        </nav>
+        <div class="container">
+
+        </div>
+        <br>
+        <form id="form">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Search Term</label>
+                <input class="form-control" id="searchTerm">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                <select class="form-control" id="number">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <label for="exampleFormControlInput1">Start Year (optional)</label>
+            <input class="form-control" id="startYear">
+            <label for="exampleFormControlTextarea1">End Year (optional)</label>
+            <input class="form-control" id="endYear">
+            <button class="btn btn-primary btn-sm" id="search">Search</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="clear">Clear Results</button>
+        </form>
+
+        <br>
+        <div>
+            <h3>Top Articles</h3>
+            <div id="topArticles"></div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
